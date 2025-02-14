@@ -1,0 +1,39 @@
+import 'package:chat_app/widget/chat_bubble.dart';
+import 'package:chat_app/widget/chat_input.dart';
+import 'package:flutter/material.dart';
+
+class ChatPage extends StatelessWidget {
+  const ChatPage({super.key});
+
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        title: Text('Hi Itsik'),
+        actions: [
+          IconButton(onPressed: (){
+              print('Icon pressed');
+          },
+              icon: Icon(Icons.logout))
+        ],
+      ),
+    body: Column(
+      children: [
+        Expanded(
+          child: ListView.builder(
+              itemCount: 10,
+              itemBuilder: (context, index){
+            return ChatBubble(
+                alignment: index % 2 ==0 ? Alignment.centerLeft: Alignment.centerRight,
+                message: "Hello, This is Itsik");
+
+          }),
+        ),
+        ChatInput()
+      ],
+    ),
+    );
+  }
+}
