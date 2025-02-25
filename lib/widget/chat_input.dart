@@ -7,6 +7,10 @@ class ChatInput extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 100,
+      decoration: BoxDecoration(
+          color: Colors.black,
+          borderRadius: BorderRadius.vertical(top: Radius.circular(20))
+      ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -15,10 +19,6 @@ class ChatInput extends StatelessWidget {
           IconButton(onPressed: (){},
               icon: Icon(Icons.send, color: Colors.white))
         ],
-      ),
-      decoration: BoxDecoration(
-          color: Colors.black,
-          borderRadius: BorderRadius.vertical(top: Radius.circular(20))
       ),
     );
   }

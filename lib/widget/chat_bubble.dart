@@ -11,11 +11,18 @@ class ChatBubble extends StatelessWidget {
       alignment: alignment,
       child: Container(
         padding: EdgeInsets.all(24),
+        margin: EdgeInsets.all(50),
+        decoration: BoxDecoration(
+            color: Colors.black,
+            borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(12),
+                topRight: Radius.circular(12),
+                bottomLeft: Radius.circular(12))),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              '$message',
+              message,
               style: TextStyle(fontSize: 20, color: Colors.white),
             ),
             Image.network(
@@ -24,13 +31,6 @@ class ChatBubble extends StatelessWidget {
             )
           ],
         ),
-        margin: EdgeInsets.all(50),
-        decoration: BoxDecoration(
-            color: Colors.black,
-            borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(12),
-                topRight: Radius.circular(12),
-                bottomLeft: Radius.circular(12))),
       ),
     );
   }
