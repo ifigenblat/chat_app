@@ -1,0 +1,1 @@
+/Users/ifigenblat/Development/chat_app/build/app/intermediates/cxx/Debug/3w155i6p/obj/arm64-v8a

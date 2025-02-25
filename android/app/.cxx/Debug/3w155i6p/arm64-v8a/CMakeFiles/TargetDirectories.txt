@@ -1,0 +1,2 @@
+/Users/ifigenblat/Development/chat_app/android/app/.cxx/Debug/3w155i6p/arm64-v8a/CMakeFiles/edit_cache.dir
+/Users/ifigenblat/Development/chat_app/android/app/.cxx/Debug/3w155i6p/arm64-v8a/CMakeFiles/rebuild_cache.dir
